@@ -1,0 +1,56 @@
+\documentclass{cvformyself}
+
+\newcommand{\smallcaps}[1]{\textsc{\lowercase{#1}}}
+
+\addbibresource{own-bib.bib}
+
+%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
+\mynames{Yang/Tianle}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\leftheader{%
+	{\Huge\bfseries\sffamily Tianle Yang}
+	% {\Huge (杨天乐)}
+	\hspace{1em}{\small\itshape\color{gray} updated at \today}
+	\vspace{1em}
+
+	\makefield{\faEnvelope[regular]}{\href{mailto:10211510098@stu.ecnu.edu.cn}{\texttt{10211510098@stu.ecnu.edu.cn}}}
+
+	\makefield{\faGlobe}{\url{http://tianleyang.com}}
+	\vspace{1em}
+}
+
+\rightheader{~}
+
+% % The \photoscale macro specifies the amount of text width that the photo should occupy. 
+% % This should be a number between 0 and 1. By default, 0.1 is used (meaning 10% of \textwidth).
+% \photoscale{0.13}
+% \photo[r]{hxj_no_bg.png}
+
+
+\begin{document}
+
+	\makeheaders[c]
+
+	\makerubric{education}
+
+	\makerubric{experience}
+
+	\makerubrichead{Research}
+		\nocite{*}
+		\printbibliography[heading={subbibliography},title={Preprints},type=misc]
+
+	\makerubric{honors}
+
+	\makerubric{interest}
+
+	\makerubric{skills}
+
+\end{document}
